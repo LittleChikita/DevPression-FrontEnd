@@ -1,0 +1,34 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Filtro de Oleo",
+      "descricao": "Filtro de Oleo para Marea 2.4",
+      "imagem": "https://i.imgur.com/T9pL9JW.png"
+    },
+    {
+      "id": 2,
+      "nome": "Oleo Para Motor",
+      "descricao": "15W-40",
+      "imagem": "https://i.imgur.com/MEJju9c.png"
+    },
+    {
+      "id": 3,
+      "nome": "Aditivo Para Radiador",
+      "descricao": "Concentrado",
+      "imagem": "https://i.imgur.com/4A3PG9P.png"
+    },
+    {
+      "id": 4,
+      "nome": "Roda Aro 15",
+      "descricao": "Liga Leve",
+      "imagem": "https://i.imgur.com/dmD4DBf.png"
+    },
+    {
+      "id": 5,
+      "nome": "Abafador Final",
+      "descricao": "Inox",
+      "imagem": "https://i.imgur.com/oKoGQbb.png"
+    }
+  ]
+}
