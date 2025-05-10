@@ -1,0 +1,39 @@
+<div class="search-container">
+
+  <div class="form-group">
+    <label>Tipo de produto:</label>
+    <mat-form-field appearance="fill" class="custom-select">
+      <mat-select [(ngModel)]="opcaoSelecionada" (selectionChange)="onSelecionarProduto()" disableRipple>
+        <mat-option value="">Selecione</mat-option>
+        <mat-option *ngFor="let opcao of opcoes" [value]="opcao.id">
+          {{ opcao.nome }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="opcaoSelecionada">
+    <mat-form-field appearance="fill" class="custom-input">
+      <input matInput placeholder="Nome" [(ngModel)]="produtoEditado.nome">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="custom-input">
+      <input matInput placeholder="Descrição" [(ngModel)]="produtoEditado.descricao">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="custom-input">
+      <input matInput placeholder="Imagem" [(ngModel)]="produtoEditado.imagem">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="custom-input">
+      <input matInput placeholder="ID" [value]="produtoEditado.id" disabled>
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="atualizarProduto()">Salvar Alterações</button>
+  </div>
+
+
+  <button mat-flat-button color="warn" class="buscar-btn" (click)="excluirProduto()">
+    Excluir Produto
+  </button>
+</div>

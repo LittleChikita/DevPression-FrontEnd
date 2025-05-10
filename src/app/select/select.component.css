@@ -1,0 +1,51 @@
+
+.search-container {
+  display: grid;
+  grid-template-columns: 200px 500px auto;
+
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-input{
+  width: 500px;
+}
+.custom-select{
+  width: 200px;
+}
+
+.custom-select, .custom-input, .buscar-btn {
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+
+.buscar-btn {
+  width: 120px;
+  height: 66px;
+  background-color: #f48fb1;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.buscar-btn:hover {
+  background-color: #e91e63;
+}
